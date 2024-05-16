@@ -4,34 +4,40 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
+
 .video-container {
     position: relative;
     width: 100%;
     display: block;
 }
+
 video {
     width: 100%;
     height: auto;
 }
-.button-container {
+
+.overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    top: 20%; /* Ajustar según sea necesario para alinear con el título en el video */
-    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajuste para mejorar el contraste */
 }
-.btn {
-    padding: 10px 20px;
-    background-color: #00aaff;
-    color: white;
+
+/* Ajustes para el iframe de Google Forms */
+iframe {
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra para dar profundidad */
+    width: 90%; /* Ajusta al ancho del contenedor */
+    max-width: 450px; /* Ancho máximo más pequeño para adaptar el diseño */
+    height: 600px; /* Altura ajustada para contener mejor el formulario */
+    background-color: #30d5c8; /* Color de fondo turquesa */
+    padding: 15px; /* Espacio interior */
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-.mapa iframe {
-    width: 100%; /* Asegura que el mapa cubra el ancho disponible */
-    height: 450px; /* Altura del mapa */
-    border: none; /* Elimina cualquier borde */
+    display: block; /* Asegura que el iframe sea un bloque para centrar */
+    margin: auto; /* Centra automáticamente el iframe horizontalmente */
 }
